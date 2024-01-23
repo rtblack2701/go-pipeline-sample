@@ -18,6 +18,13 @@ pipeline:
           execution:
             steps:
               - step:
+                  type: Run
+                  name: go_build
+                  identifier: go_build
+                  spec:
+                    shell: Sh
+                    command: go build -v
+              - step:
                   identifier: gotest
                   name: go_test
                   spec:
