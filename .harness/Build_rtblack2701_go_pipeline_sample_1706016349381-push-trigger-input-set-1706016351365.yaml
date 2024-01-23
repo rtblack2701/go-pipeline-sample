@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_rtblack2701_go_pipeline_sample_1706016349381-push-trigger-input-set
+  identifier: Build_rtblack2701_go_pipeline_sample_1706016349381pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_rtblack2701_go_pipeline_sample_1706016349381
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
